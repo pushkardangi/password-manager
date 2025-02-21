@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Manager | Keep your passwords safe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <form>
+      <div class="inputs">
+        <label for="superkey">
+          <input id="superkey" type="text" placeholder="Enter your superkey" required>
+        </label>
+
+        <label for="username">
+          <input id="username" type="text" placeholder="Enter your username" required>
+        </label>
+        
+        <label for="pasword">
+          <input id="password" type="text" placeholder="Enter your password" required>
+        </label>
+      </div>
+
+      <div class="buttons">
+        <button id="generate-password">Generate Passowrd</button>
+        <button id="save-password">Save Password</button>
+      
+        <button id="encrypt-password">Encrypt Passowrd</button>
+        <button id="decrypt-password">Decrypt Password</button>
+      </div>
+    </form>
+  </div>
+  
+  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</body>
+</html>
